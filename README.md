@@ -35,3 +35,4 @@ bun run db:seed
 bun run dev:api    # Elysia API on port 3001
 bun run dev:web    # SvelteKit UI on port 5173
 ```
+
