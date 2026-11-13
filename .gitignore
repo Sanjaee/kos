@@ -1,0 +1,30 @@
+# node_modules
+node_modules
+*/node_modules
+*/*/node_modules
+.bun
+*/.bun
+*/*/.bun
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+!*.env.example
+
+# Build outputs
+dist
+build
+.svelte-kit
+.vercel
+
+# Local data & logs
+.pglite_data
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
+

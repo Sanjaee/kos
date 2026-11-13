@@ -1,0 +1,22 @@
+{
+  "name": "my-kosan",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "bun --filter \"*\" dev",
+    "dev:api": "bun --filter api dev",
+    "dev:web": "bun --filter web dev",
+    "build": "bun --filter \"*\" build",
+    "db:push": "bun --filter @my-kosan/database db:push",
+    "db:migrate": "bun --filter @my-kosan/database db:migrate",
+    "db:seed": "bun --filter @my-kosan/database db:seed"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.16",
+    "typescript": "^5.7.0"
+  }
+}
